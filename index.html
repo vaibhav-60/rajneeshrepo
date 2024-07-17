@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="big-logo">
+            <img src="./utils/big-logo.png" alt="Big Logo">
+        </div>
+        <div class="menu">
+            <div class="dropdown">
+                <img src="./utils/layout.png" alt="Dashboard Icon">
+                <button id="dashboardBtn" class="dropbtn" onclick="showContent('dashboardContent')">Dashboard</button>
+            </div>
+            <div class="dropdown">
+                <img src="./utils/new-invoice.png" alt="New PAN Icon">
+                <button class="dropbtn" onclick="showContent('newPanContent')">New PAN <span class="arrow">&#9662;</span></button>
+            </div>
+            <div class="dropdown">
+                <img src="./utils/quality-control.png" alt="Correction PAN Icon">
+                <button class="dropbtn" onclick="showContent('correctionPanContent')">Correction PAN <span class="arrow">&#9662;</span></button>
+            </div>
+            <div class="dropdown">
+                <img src="./utils/wallet.png" alt="Wallet Management Icon">
+                <button class="dropbtn" onclick="showContent('walletManagementContent')">Wallet Management <span class="arrow">&#9662;</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <nav class="navbar">
+            <ul class="left-navbar">
+                <li class="menu-btn">&#9776;</li>
+                <li class="list-1"><input type="text" placeholder="Search"></li>
+            </ul>
+            <ul class="user-profile">
+                <li><img src="./utils/Pasted image.png" alt="User Avatar"></li>
+                <li>
+                    <div class="user-info">
+                        <span class="username">Rajneesh Kumar</span>
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-content">
+                        <a href="#"><img src="./utils/profile-user.png" alt="Logo"> Profile</a>
+                        <a href="#"><img src="./utils/password-code.png" alt="Logo"> Change Password</a>
+                        <a href="#"><img src="./utils/logout.png" alt="Logo"> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="dashboardContent" class="dashboard-content content active">
+            <h2 class="dashboard-title">Dashboard</h2>
+            <div class="dashboard-grid">
+                
+                <div class="info-box">
+                    <div class="info-content">
+                        <img src="./utils/logo.png" alt="Logo" class="info-logo">
+                        <div class="info-details">
+                            <p>Welcome back Rajneesh Kumar</p>
+                            <div class="info-item">
+                                
+                                <span class="info-text">Mobile: +91 902530rh4</span>
+                            </div>
+                            <div class="info-item">
+                                
+                                <span class="info-text">Email: rajnees@gamil.com</span>
+                            </div>
+                            <div class="info-item">
+
+                                <span class="info-text">Location: dhampur, bijnor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                
+                <div class="dashboard-item item1">
+                    <p>Today Income:<br>0.00<br>Yesterday Income:<br>0.00</p>
+                </div>
+                <div class="dashboard-item item2">
+                    <p>Today Income:<br>0.00<br>Yesterday Income:<br>0.00</p>
+                </div>
+                <div class="dashboard-item item3">
+                    <p>Month Income:<br>0.00<br>Last Month Income:<br>0.00</p>
+                </div>
+                <div class="dashboard-item item4">
+                    <p>Month Income:<br>0.00<br>Last Month Income:<br>0.00</p>
+                </div>
+                <div class="dashboard-item item5">
+                    <p>Month Income:<br>0.00<br>Last Month Income:<br>0.00</p>
+                </div>
+                <div class="dashboard-item item6">
+                    <p>Your Total Earning:<br>4.00<br>Send to your bank account:<br><a href="#">click here</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="newPanContent" class="content">
+            <h2>Apply for New PAN</h2>
+        </div>
+        <div id="correctionPanContent" class="content">
+            <h2>Correction PAN</h2>
+        </div>
+        <div id="walletManagementContent" class="content">
+            <h2>Wallet Management</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
